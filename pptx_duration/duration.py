@@ -17,8 +17,8 @@ def main():
     file_list = glob.glob(temp_folder + "\\ppt\\media\\" + "*.m4a")
 
     total_time = 0
-    for file in file_list:
-        tag = TinyTag.get(file)
+    for filename in file_list:
+        tag = TinyTag.get(filename)
         total_time += tag.duration
 
     print(f"Total Time = {datetime.timedelta(seconds=total_time)}")

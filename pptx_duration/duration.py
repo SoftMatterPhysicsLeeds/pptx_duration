@@ -11,6 +11,11 @@ def main():
         sys.exit(1)
 
     file_path = Path(sys.argv[1])
+
+    if file_path.suffix is not ".pptx":
+        print("Incorrect input file format.")
+        sys.exit(1)
+
     folder = file_path.parents[0]
     temp_folder = folder / "temp"
 

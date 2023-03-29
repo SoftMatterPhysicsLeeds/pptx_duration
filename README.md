@@ -21,7 +21,7 @@ and installs itself, and its dependencies, in
 its own environment).
 
 ```
-> git clone https://github.com/danlindleybaker/pptx_duration
+> git clone https://github.com/SoftMatterPhysicsLeeds/pptx_duration
 > cd pptx_duration
 > python -m build
 ...

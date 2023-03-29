@@ -12,7 +12,9 @@ def main():
 
     file_path = Path(sys.argv[1])
 
-    if file_path.suffix is not ".pptx":
+    if file_path.suffix == ".pptx":
+        print("Determining duration...")
+    else:
         print("Incorrect input file format.")
         sys.exit(1)
 

@@ -13,10 +13,22 @@ and so it isn't immediately obvious how long a recorded presentation is. This
 simple Python script unzips the .pptx and determines the runtime for you. 
 
 ## Usage
-```
-pip install pptx_duration
-python pptx_duration PATH_TO_PPTX
 
-Total Time = 0:10:00
+This package isn't on PyPI yet (could be...) and so best is to build your own
+wheel and then pipx install into a local environment (pipx -
+https://github.com/pypa/pipx - allows the script to be run without 'python'
+before it and installs itself, and its dependencies, in
+it's own environment).
+
+```
+> git clone https://github.com/danlindleybaker/pptx_duration
+> cd pptx_duration
+> python -m build
+...
+> cd dist
+> pipx install .\pptx_duration-0.0.1-py3-none-any.whl
+> pptx_duration PATH_TO_PPTX
+
+Total Time = 0:10:00 
 
 ```

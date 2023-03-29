@@ -16,9 +16,9 @@ simple Python script unzips the .pptx and determines the runtime for you.
 
 This package isn't on PyPI yet (could be...) and so best is to build your own
 wheel and then pipx install into a local environment (pipx -
-https://github.com/pypa/pipx - allows the script to be run without 'python'
-before it and installs itself, and its dependencies, in
-it's own environment).
+https://github.com/pypa/pipx - allows the script to be run using the command 'pptx_duration'
+and installs itself, and its dependencies, in
+its own environment).
 
 ```
 > git clone https://github.com/danlindleybaker/pptx_duration

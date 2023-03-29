@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pptx_duration"
+version = "0.0.1"
+authors = [
+    {name =  "Dan Baker", email = "danlindleybaker@gmail.com"}
+]
+description = "Package for determining runtime of pre-recorded PowerPoint presentations."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows"
+]
+dependencies = [
+    "tinytag",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/danlindleybaker/pptx_duration"
+"Bug Tracker" = "https://github.com/danlindleybaker/pptx_duration/issues"
+
+[project.scripts]
+pptx_duration = "pptx_duration.duration:main"
